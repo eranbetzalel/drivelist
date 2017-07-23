@@ -19,7 +19,7 @@
 const drivelist = require('..');
 const util = require('util');
 
-drivelist.list((error, drives) => {
+drivelist.list(function (error, drives) {
   if (error) {
     console.error(error);
     process.exit(1);
